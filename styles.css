@@ -54,7 +54,7 @@
   position: absolute;
   left:42%;
   top:9.5%;
-  border-radius: 10px;   
+  border-radius: 10px;   /*This would make the corners of the button rounded*/
 }
 
 
@@ -73,7 +73,7 @@
   position: absolute;
   left:52%;
   top:9.5%;
-  border-radius: 10px;
+  border-radius: 10px; /*This would make the corners of the button rounded*/
 }
 #angle{
   width: 5%;
