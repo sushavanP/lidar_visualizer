@@ -38,17 +38,12 @@
   top: 3.5%;
 }
 
-/*div.kuchBhi{
-  vertical-align: middle;
-  padding-left: 200px;
-  text-align: center;
-}*/
 #play{
   display: inline-block;
   background-color: aqua;
   width: 7%;
   color: white;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px; /*Made the padding correct to bring the text in the center*/
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -59,7 +54,6 @@
   top:10%;
   border-radius: 10px;
   display: table-cell;
-
 }
 
 
@@ -68,7 +62,7 @@
   width: 7%;
   border: none;
   color: white;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px; /*Made the padding correct to bring the text in the center*/
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -81,6 +75,7 @@
   top:9.5%;
   border-radius: 10px; /*This would make the corners of the button rounded*/
 }
+
 #angle{
   width: 5%;
   border: none;
