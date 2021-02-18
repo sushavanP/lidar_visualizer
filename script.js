@@ -9,6 +9,8 @@ dropdown.selectedIndex = 0;
 
 var request;
 
+
+
 request = new XMLHttpRequest();
 
 request.open('GET','data.json');

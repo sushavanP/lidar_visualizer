@@ -8,13 +8,40 @@
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js"></script>
     <link rel = "icon" href = "images/mowito_icon .png" type = "image/x-icon"> 
     <title>Mowito Lidar Visualizer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </script>
   </head>
   <body>
-    <select id="lidar" name="Lidar Type" onchange="assist(this)">
-    
-  </select>
-  <a href="https://mowito.in/"> 
-    <img src="images/mowito.png" width="15%" height="10%"></a>
+  <!-- Adding navbar to the page -->
+  <nav class="navbar custom-navbar navbar-inverse navbar-expand-lg navbar-light bg-transparent fixed-top scrolling-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://mowito.in/"><img src="images/mowito.png" width="15%" height="10%"></a>
+      <button class="navbar-toggler collapsed ml-auto hidden-sm-up float-xs-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" > <!--added all the navlinks to the navbar-->
+          <a class="nav-link" style="color:black" aria-current="page" href="https://mowito.in/#">Home</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/#">Products&Services</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/#">Team</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/#">News</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/our_blog.html">Blogs</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/recruitment.html">Career</a>
+          <a class="nav-link" style="color:black" href="https://mowito.in/index.html#my_contact" tabindex="-1" aria-disabled="flase">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="lidar">
+    <select class="lidar" id="lidar" name="Lidar Type" onchange="assist(this)">
+    </select>
+  </div>
+  <!-- <a href="https://mowito.in/"> 
+    <img src="images/mowito.png" width="15%" height="5%"></a> -->
   <div id="instructions" class="instr">
     <h3> Instructions: <br> </h3>
     <p>
@@ -30,6 +57,7 @@
 
   </p>
   </div>
+  <div id="buttons">
     <a href="https://mowito.in/index.html#my_contact" id="contactus" target="_blank">Contact Us</a>
     <div id="update"></div>
     <input type="button" class= "btn" id="play" onclick="play()" value="Play" class="playbutton" ></input>
@@ -38,12 +66,14 @@
     <label id="rangetextbox" for="range" >Detection Range (m):</label> <input type="number" id="range" onclick="rangeofrays()" placeholder="detection distance" data-inline="true" value="500"></input>
     <label id="angrangetextbox" for="angrange">Angular Range (Deg) :</label> <input type="number" id="angrange" onclick="angularrange()" data-inline="true" placeholder="Angle Range" value="360"></input>
     <label id="widlabel" for="length">Room Length:</label><input type="number" id="breadth" placeholder="Breadth" data-inline="true" value="250"></input>
+  </div>
     <script src="script.js"></script>
     <script src="sketch.js"></script>   
     <script src="ray.js"></script>
     <script src="boundary.js"></script>
     <script src="particle.js"></script>
-   
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
