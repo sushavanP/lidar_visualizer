@@ -5,7 +5,31 @@ body{
 .navbar-nav{
   font-size: 1.2em;
   font-style: italic;
+  display: flex;
+  flex-direction: row;
 }
+.name{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top:100px;
+  line-height: 80px;
+  height: 70px;
+  padding-bottom:0px;
+  margin-bottom:0px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  background: -webkit-linear-gradient(#00c6ff
+  , #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name h1{
+  font-size: 60px;
+}
+
 .instr{
   /*width: 15%;*/
   width: 18%;
@@ -14,17 +38,21 @@ body{
   word-wrap: break-word;
   hyphens: auto;
   position: absolute;;
+  border: solid black 2px;
   /*top: 25%;*/
-  top: 22%;
-  padding-left: 1em;
+  top: 23%;
+  margin-left: 3px;
+  padding-left: 3px;
   font-size: large;
  background: rgba(0,0,0,0.1);
+ border-radius: 5px;
 
 }
-/* #buttons{
-  float: left;
-  
-} */
+.buttons-down{
+  padding-top: 0px;
+  margin-top: 35px;
+
+}
 
 
 
@@ -34,24 +62,28 @@ body{
   clear: left;
   text-align: left;
   left: 19%;
-  top: 12%;
+  top: 32%;
   font-size: 1.2vw;
 }
 #breadth{
   width: 7%;
   border: none;
-  color: white;
-  padding: 12px 20px;
-  text-align: center;
-  text-decoration: none;  
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: solid black 2px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: black;
   position: absolute;
   left: 26.5%;
-  top: 10%;
+  border-radius: 8px;
+  /* top: 10%; */
 }
 
 #play{
@@ -60,6 +92,8 @@ body{
   width: 7%;
   color: white;
   padding: 10px 0px 10px 0px; /*Made the padding correct to bring the text in the center*/
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   text-decoration: none;
   border: none;
   cursor: pointer;
@@ -67,7 +101,7 @@ body{
   font-size: 1vw;
   margin: 0 auto;
   left:42%;
-  top:18%;
+  top:38%;
   border-radius: 10px;
   display: table-cell;
 }
@@ -80,6 +114,8 @@ body{
   color: white;
   padding: 10px 0px 10px 0px; /*Made the padding correct to bring the text in the center*/
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
@@ -88,49 +124,57 @@ body{
   background-color: deepskyblue;
   position: absolute;
   left:52%;
-  top:17.5%;
+  top:37.5%;
   border-radius: 10px; /*This would make the corners of the button rounded*/
 }
 
 #angle{
   width: 7%;
   border: none;
-  color: white;
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: solid black 2px;
+  font-family: 'Open Sans', sans-serif;
   padding: 10px 20px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin: 4px 6px;
   cursor: pointer;
-  background-color: black;
   position: absolute;
+  border-radius: 8px;
   left: 48.5%;
-  top:10%;
+  /* top:10%; */
 }
 #range{
   width: 7%;
   border: none;
-  color: white;
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: solid black 2px;
+  font-family: 'Open Sans', sans-serif;
   padding: 10px 20px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin: 4px 6px;
   cursor: pointer;
-  background-color: black;
   position: absolute;
   left :69%;
-  top: 10%;
-  
+  border-radius: 8px
+  /* top: 10%; */
+
 }
 #rangetextbox{
   width: 20%;
   position: absolute;
   font-size:1.2vw;
   left: 58%;
-  top: 12%;
+  top: 32%;
   clear: left;
   text-align:left;
 }
@@ -141,7 +185,7 @@ body{
   width: 20%;
   position:absolute;
   left:35%;
-  top:12%;
+  top:32%;
   clear: left;
   text-align:left;
   font-size: 1.2vw;
@@ -168,38 +212,46 @@ width: 15%;
   position: absolute;
   display: flex;
   border: none;
-  color: white;
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: solid black 2px;
+  font-family: 'Open Sans', sans-serif;
   padding: 15px 32px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   font-size: 6 rem;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: black;
+  border-radius: 5px;
   top: 13%;
 }
 #angrange{
   width: 7%;
   border: none;
-  color: white;
+  color: black;
+  font-weight: 1000;
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  border: solid black 2px;
+  font-family: 'Open Sans', sans-serif;
   padding: 10px 20px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
   margin: 4px 6px;
   cursor: pointer;
-  background-color: black;
   position: absolute;
-  left:89.5%;
-  top:10%;
+  left:89.2%;
+  border-radius: 8px;
+  /* top:10%; */
 
-  
+
 }
 #angrangetextbox{
   position:absolute;
   left:78%;
-  top:12%;
+  top:32%;
   width: 20%;
   clear: left;
   text-align:left;
@@ -209,10 +261,10 @@ width: 15%;
   float: left;
 }
 
-#contactus{
+/* #contactus{
   position: absolute;
   text-align: center;
-  top: 18%;
+  top: 18%; 
   left: 85%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw;
@@ -221,4 +273,4 @@ width: 15%;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 20px;
-}
+} */
