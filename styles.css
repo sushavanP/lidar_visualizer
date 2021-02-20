@@ -19,11 +19,12 @@ body{
 
 .name{
   display: flex;
+  position: relative;
   justify-content: center;
   text-align: center;
   font-size: 100px;
   font-weight: bold;
-  margin-top:100px;
+  margin-top:95px;
   line-height: 80px;
   height: 70px;
   padding-bottom:0px;
@@ -49,7 +50,7 @@ body{
   position: absolute;;
   border: solid black 2px;
   /*top: 25%;*/
-  top: 23%;
+  top: 23.5%;
   margin-left: 3px;
   padding-left: 3px;
   font-size: large;
@@ -71,7 +72,7 @@ body{
   clear: left;
   text-align: left;
   left: 19%;
-  top: 32%;
+  top: 30.5%;
   font-size: 1.2vw;
 }
 #breadth{
@@ -87,12 +88,11 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
-  margin: 4px 2px;
   cursor: pointer;
   position: absolute;
   left: 26.5%;
   border-radius: 8px;
-  /* top: 10%; */
+  top: 29.5%;
 }
 
 #play{
@@ -110,10 +110,10 @@ body{
   font-size: 1vw;
   margin: 0 auto;
   left:82%;
-  top:38.2%;
+  top:36.8%;
   border-radius: 10px;
   border: solid black 2px;
-  display: table-cell;
+  display: inline-block;
 }
 
 
@@ -134,7 +134,7 @@ body{
   background-color: deepskyblue;
   position: absolute;
   left:89.5%;
-  top:37.5%;
+  top:36.3%;
   border-radius: 10px; /*This would make the corners of the button rounded*/
   border: solid black 2px;
 }
@@ -152,12 +152,11 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
-  margin: 4px 6px;
   cursor: pointer;
   position: absolute;
   border-radius: 8px;
-  left: 48.5%;
-  /* top:10%; */
+  left: 48.8%;
+  top:29.5%;
 }
 #range{
   width: 7%;
@@ -172,12 +171,11 @@ body{
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
-  margin: 4px 6px;
   cursor: pointer;
   position: absolute;
-  left :69%;
-  border-radius: 8px
-  /* top: 10%; */
+  left :69.3%;
+  border-radius: 8px;
+  top: 29.5%;
 
 }
 #rangetextbox{
@@ -185,7 +183,7 @@ body{
   position: absolute;
   font-size:1.2vw;
   left: 58%;
-  top: 32%;
+  top: 30.5%;
   clear: left;
   text-align:left;
 }
@@ -196,7 +194,7 @@ body{
   width: 20%;
   position:absolute;
   left:35%;
-  top:32%;
+  top:30.5%;
   clear: left;
   text-align:left;
   font-size: 1.2vw;
@@ -228,14 +226,16 @@ width: 15%;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   border: solid black 2px;
   font-family: 'Open Sans', sans-serif;
-  padding: 15px 32px;
+  padding: 15px 15px;
   text-align: left;
   text-decoration: none;
   font-size: 6 rem;
-  margin: 4px 2px;
+  /* margin: 4px 2px; */
+  margin-left: 3px;
+  width: 18%;
   cursor: pointer;
   border-radius: 5px;
-  top: 13%;
+  top: 15%;
 }
 #angrange{
   width: 7%;
@@ -250,19 +250,19 @@ width: 15%;
   text-decoration: none;
   display: inline-block;
   font-size: 1vw;
-  margin: 4px 6px;
+  /* margin: 4px 6px; */
   cursor: pointer;
   position: absolute;
-  left:89.2%;
+  left:89.5%;
   border-radius: 8px;
-  /* top:10%; */
+  top:29.5%;
 
 
 }
 #angrangetextbox{
   position:absolute;
   left:78%;
-  top:32%;
+  top: 30.5%;
   width: 20%;
   clear: left;
   text-align:left;
