@@ -1,3 +1,4 @@
+
 var angularrange = 360;
 let dropdown = document.getElementById("lidar");
 dropdown.length = 0;

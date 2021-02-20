@@ -18,10 +18,10 @@ function setup() {
     cnv = createCanvas(windowWidth-380, windowHeight-130);
     cnv.mouseClicked(createwalls);
     // cnv.position(280,130);
-    cnv.position(350,300);
+    cnv.position(350,330);
     walls.push(new Boundary(boundarySpacing, boundarySpacing, width-boundarySpacing, boundarySpacing));
     walls.push(new Boundary(width-boundarySpacing, boundarySpacing, width-boundarySpacing, height-boundarySpacing));
-   walls.push(new Boundary(width-boundarySpacing, height-boundarySpacing, boundarySpacing, height-boundarySpacing));
+    walls.push(new Boundary(width-boundarySpacing, height-boundarySpacing, boundarySpacing, height-boundarySpacing));
     walls.push(new Boundary(boundarySpacing, height-boundarySpacing, boundarySpacing, boundarySpacing));
     //console.log(width);
     //console.log(height);

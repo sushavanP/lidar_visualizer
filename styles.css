@@ -4,10 +4,19 @@ body{
 
 .navbar-nav{
   font-size: 1.2em;
-  font-style: italic;
   display: flex;
   flex-direction: row;
 }
+
+#nalink:hover{
+  border: none;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.5));
+  border-radius: 10px;
+  transition: linear 0.5s;
+  transform: scale(1.15);
+  box-shadow: 5px;
+}
+
 .name{
   display: flex;
   justify-content: center;
@@ -21,8 +30,7 @@ body{
   margin-bottom:0px;
   color: black;
   font-family: 'Open Sans', sans-serif;
-  background: -webkit-linear-gradient(#00c6ff
-  , #0072ff);
+  background: -webkit-linear-gradient(#00c6ff, #0072ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -44,8 +52,8 @@ body{
   margin-left: 3px;
   padding-left: 3px;
   font-size: large;
- background: rgba(0,0,0,0.1);
- border-radius: 5px;
+  background: rgba(0,0,255,0.1);
+  border-radius: 5px;
 
 }
 .buttons-down{
@@ -100,9 +108,10 @@ body{
   position: absolute;
   font-size: 1vw;
   margin: 0 auto;
-  left:42%;
-  top:38%;
+  left:82%;
+  top:38.2%;
   border-radius: 10px;
+  border: solid black 2px;
   display: table-cell;
 }
 
@@ -123,9 +132,10 @@ body{
   cursor: pointer;
   background-color: deepskyblue;
   position: absolute;
-  left:52%;
+  left:89.5%;
   top:37.5%;
   border-radius: 10px; /*This would make the corners of the button rounded*/
+  border: solid black 2px;
 }
 
 #angle{
